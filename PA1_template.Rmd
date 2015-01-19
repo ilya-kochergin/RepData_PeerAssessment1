@@ -14,9 +14,7 @@ library(dplyr)
 # setwd("/Volumes/Transcend/coursera/statinf/courses/05_ReproducibleResearch/mywork/RepData_PeerAssessment1")
 activity.df<- read.csv(unz("activity.zip","activity.csv"))
 activity.df$bdate<-as.POSIXct(activity.df$date,fomat="%Y-%m-%d",tz="")
-summary(activity.df)
-head(na.omit(activity.df))
-tail(activity.df)
+
 ```
 
 
